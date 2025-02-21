@@ -3,31 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal site of Altairion">
+    <meta name="author" content="Altairion">
     <title>Altairion.me</title>
+    
+    <!-- Favicon (Optional) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
             text-align: center;
             background-color: #ffffff;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
         }
         img {
             margin: 20px;
             max-width: 100%;
             height: auto;
         }
+        nav {
+            background: #007bff;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+            footer {
+                background: #1e1e1e;
+            }
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="https://github.com/altairion" target="_blank">GitHub</a>
+    </nav>
+
     <h1>Welcome to Altairion.me!</h1>
     <p>I'm still building this site!</p>
 
-    <!-- Add your GIF reference here -->
-    <img src="images/felixani.gif">
+    <img src="images/felixani.gif" alt="Animated Felix">
 
-<footer>
-    <p>
-        <a href="https://github.com/altairion" target="_blank">Check out my GitHub</a>
-    </p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Altairion | <a href="https://github.com/altairion" target="_blank">GitHub</a></p>
+    </footer>
 </body>
 </html>
